@@ -9,9 +9,6 @@ if file_csv is not None:
     df = pd.read_csv(file_csv).describe()
     st.table(df)
 
-st.subheader("Dealing with images")
-st.image('D:\Machine Learning GFG\Libraries\Streamlit\First.jpg')
-
 st.subheader("Dealing with images while uploading")
 img_file = st.file_uploader("Upload the image file : ", type = ["png" , 'jpg' , 'jpeg'])
 if img_file is not None:
